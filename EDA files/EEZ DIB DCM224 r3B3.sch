@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16078,7 +16078,7 @@ Source: Samtec SSW.pdf</description>
 <part name="C20" library="rcl" deviceset="C-EU" device="C1206" value="2u2"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C1206" value="10n/200V"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="10n/200V"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C1206" value="10n/200V"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C1206" value="1u/100V"/>
 <part name="L1" library="EEZ_Lib1" deviceset="RN112" device="" value="RN112-4-02-0M7"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R2512" value="N.C."/>
 <part name="PE1" library="supply1" deviceset="PE" device=""/>
@@ -16377,6 +16377,9 @@ Source: Samtec SSW.pdf</description>
 <part name="TP1" library="EEZ_connectors" deviceset="TEST-PIN" device="_0.9MM"/>
 <part name="TP2" library="EEZ_connectors" deviceset="TEST-PIN" device="_0.9MM"/>
 <part name="TP3" library="EEZ_connectors" deviceset="TEST-PIN" device="_0.9MM"/>
+<part name="FM3" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
+<part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16474,6 +16477,66 @@ UVLO on: +38 V</text>
 <text x="5.08" y="177.8" size="1.778" layer="97" rot="MR180">+48V DC input</text>
 <rectangle x1="39.37" y1="161.29" x2="45.72" y2="168.91" layer="97"/>
 <rectangle x1="77.47" y1="30.48" x2="84.455" y2="37.465" layer="97"/>
+<circle x="295.91" y="163.83" radius="0.635" width="0.1524" layer="114"/>
+<circle x="295.91" y="161.29" radius="0.635" width="0.1524" layer="114"/>
+<circle x="295.91" y="158.75" radius="0.635" width="0.1524" layer="114"/>
+<circle x="295.91" y="156.21" radius="0.635" width="0.1524" layer="114"/>
+<circle x="295.91" y="153.67" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="163.83" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="161.29" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="158.75" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="156.21" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="153.67" radius="0.635" width="0.1524" layer="114"/>
+<text x="300.99" y="132.715" size="1.4224" layer="114">26 BOOT</text>
+<text x="293.37" y="156.845" size="1.4224" layer="114" rot="R180">Gnd 7</text>
+<text x="300.99" y="137.795" size="1.4224" layer="114">22 +12V</text>
+<text x="300.99" y="145.415" size="1.4224" layer="114">16 Gnd</text>
+<text x="300.99" y="158.115" size="1.4224" layer="114">6 OE_SYNC</text>
+<text x="300.99" y="135.255" size="1.4224" layer="114">24 +5V</text>
+<text x="293.37" y="136.525" size="1.4224" layer="114" rot="R180">+5V 23</text>
+<text x="293.37" y="133.985" size="1.4224" layer="114" rot="R180">Gnd 25</text>
+<wire x1="294.64" y1="165.1" x2="299.72" y2="165.1" width="0.1524" layer="114"/>
+<text x="293.37" y="139.065" size="1.4224" layer="114" rot="R180">+12V 21</text>
+<text x="300.99" y="153.035" size="1.4224" layer="114">10 DIB_IRQ</text>
+<wire x1="299.72" y1="165.1" x2="299.72" y2="129.54" width="0.1524" layer="114"/>
+<circle x="295.91" y="148.59" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="148.59" radius="0.635" width="0.1524" layer="114"/>
+<text x="293.37" y="154.305" size="1.4224" layer="114" rot="R180">DIB_CSA 9</text>
+<circle x="295.91" y="151.13" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="151.13" radius="0.635" width="0.1524" layer="114"/>
+<text x="300.99" y="163.195" size="1.4224" layer="114">2 +Vaux</text>
+<text x="300.99" y="150.495" size="1.4224" layer="114">12 DIB_CSB</text>
+<text x="293.37" y="164.465" size="1.4224" layer="114" rot="R180">+3V3 1</text>
+<circle x="298.45" y="146.05" radius="0.635" width="0.1524" layer="114"/>
+<text x="293.37" y="151.765" size="1.4224" layer="114" rot="R180">Gnd 11</text>
+<text x="300.99" y="155.575" size="1.4224" layer="114">8 DIB_SDA</text>
+<circle x="295.91" y="146.05" radius="0.635" width="0.1524" layer="114"/>
+<circle x="295.91" y="143.51" radius="0.635" width="0.1524" layer="114"/>
+<circle x="295.91" y="140.97" radius="0.635" width="0.1524" layer="114"/>
+<circle x="295.91" y="138.43" radius="0.635" width="0.1524" layer="114"/>
+<circle x="295.91" y="135.89" radius="0.635" width="0.1524" layer="114"/>
+<circle x="295.91" y="133.35" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="143.51" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="140.97" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="138.43" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="135.89" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="133.35" radius="0.635" width="0.1524" layer="114"/>
+<text x="293.37" y="159.385" size="1.4224" layer="114" rot="R180">DIB_SCL 5</text>
+<text x="293.37" y="141.605" size="1.4224" layer="114" rot="R180">DIB_A1 19</text>
+<text x="300.99" y="160.655" size="1.4224" layer="114">4 NRESET</text>
+<text x="293.37" y="144.145" size="1.4224" layer="114" rot="R180">DIB_A0 17</text>
+<text x="300.99" y="140.335" size="1.4224" layer="114">20 Gnd</text>
+<text x="293.37" y="161.925" size="1.4224" layer="114" rot="R180">NFAULT 3</text>
+<text x="300.99" y="147.955" size="1.4224" layer="114">14 DIB_MISO</text>
+<text x="293.37" y="146.685" size="1.4224" layer="114" rot="R180">DIB_MOSI 15</text>
+<text x="293.37" y="149.225" size="1.4224" layer="114" rot="R180">DIB_SCLK 13</text>
+<text x="300.99" y="142.875" size="1.4224" layer="114">18 DIB_A2</text>
+<wire x1="294.64" y1="129.54" x2="294.64" y2="165.1" width="0.1524" layer="114"/>
+<wire x1="294.64" y1="129.54" x2="299.72" y2="129.54" width="0.1524" layer="114"/>
+<circle x="295.91" y="130.81" radius="0.635" width="0.1524" layer="114"/>
+<circle x="298.45" y="130.81" radius="0.635" width="0.1524" layer="114"/>
+<text x="293.37" y="131.445" size="1.4224" layer="114" rot="R180">UART_RX 27</text>
+<text x="300.99" y="130.175" size="1.4224" layer="114">28 UART_TX</text>
 </plain>
 <instances>
 <instance part="KK1" gate="G$1" x="147.32" y="17.78" smashed="yes">
@@ -16895,6 +16958,7 @@ UVLO on: +38 V</text>
 <attribute name="NAME" x="128.27" y="43.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="129.54" y="43.18" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="FM3" gate="FD" x="243.84" y="40.64" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -17992,8 +18056,8 @@ temp. sensors</text>
 <attribute name="NAME" x="91.821" y="101.981" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="91.821" y="99.441" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY49" gate="GND" x="86.36" y="88.9" smashed="yes">
-<attribute name="VALUE" x="82.55" y="85.09" size="1.778" layer="96"/>
+<instance part="SUPPLY49" gate="GND" x="86.36" y="96.52" smashed="yes">
+<attribute name="VALUE" x="82.55" y="92.71" size="1.778" layer="96"/>
 </instance>
 <instance part="R21" gate="G$1" x="20.32" y="78.74" smashed="yes" rot="MR270">
 <attribute name="NAME" x="19.05" y="78.9686" size="1.778" layer="95" rot="MR0"/>
@@ -18122,9 +18186,9 @@ temp. sensors</text>
 <instance part="SUPPLY52" gate="GND" x="109.22" y="91.44" smashed="yes">
 <attribute name="VALUE" x="105.41" y="87.63" size="1.778" layer="96"/>
 </instance>
-<instance part="Y1" gate="G$1" x="99.06" y="106.68" smashed="yes" rot="MR90">
-<attribute name="NAME" x="102.235" y="107.569" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="99.695" y="103.505" size="1.27" layer="96" rot="MR180"/>
+<instance part="Y1" gate="G$1" x="101.6" y="106.68" smashed="yes" rot="MR90">
+<attribute name="NAME" x="104.775" y="107.569" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="102.235" y="103.505" size="1.27" layer="96" rot="MR180"/>
 </instance>
 </instances>
 <busses>
@@ -18215,20 +18279,6 @@ temp. sensors</text>
 <wire x1="109.22" y1="93.98" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C30" gate="G$1" pin="1"/>
-<pinref part="SUPPLY49" gate="GND" pin="GND"/>
-<wire x1="88.9" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="111.76" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C31" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="106.68" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="101.6" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
-<junction x="86.36" y="101.6"/>
-<pinref part="Y1" gate="G$1" pin="GND"/>
-<wire x1="91.44" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
-<junction x="86.36" y="106.68"/>
-</segment>
-<segment>
 <pinref part="C32" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="76.2" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
@@ -18259,6 +18309,16 @@ temp. sensors</text>
 <wire x1="109.22" y1="137.16" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
 <junction x="104.14" y="137.16"/>
+</segment>
+<segment>
+<wire x1="86.36" y1="101.6" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
+<junction x="86.36" y="101.6"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="101.6" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="SUPPLY49" gate="GND" pin="GND"/>
+<pinref part="C31" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="U_SET#1" class="0">
@@ -18688,20 +18748,20 @@ temp. sensors</text>
 <pinref part="IC7" gate="G$1" pin="PF0-OSC_IN"/>
 <wire x1="121.92" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="104.14" x2="109.22" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="111.76" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="111.76" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="111.76" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="111.76" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="2"/>
-<junction x="99.06" y="111.76"/>
+<junction x="101.6" y="111.76"/>
 </segment>
 </net>
 <net name="RCC_OSC_OUT" class="0">
 <segment>
 <pinref part="C31" gate="G$1" pin="2"/>
 <pinref part="IC7" gate="G$1" pin="PF1-OSC_OUT"/>
-<wire x1="121.92" y1="101.6" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="101.6" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
-<junction x="99.06" y="101.6"/>
+<junction x="101.6" y="101.6"/>
 </segment>
 </net>
 <net name="CC_LED#1" class="0">
@@ -19320,6 +19380,9 @@ temp. sensors</text>
 </instance>
 <instance part="SH1" gate="SH" x="236.22" y="152.4"/>
 <instance part="SH2" gate="SH" x="236.22" y="147.32"/>
+<instance part="SUPPLY17" gate="GND" x="218.44" y="96.52" smashed="yes">
+<attribute name="VALUE" x="220.345" y="97.155" size="1.778" layer="96" rot="MR180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -19460,6 +19523,8 @@ temp. sensors</text>
 <wire x1="213.36" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="99.06" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
 <junction x="213.36" y="99.06"/>
+<pinref part="SUPPLY17" gate="GND" pin="GND"/>
+<junction x="218.44" y="99.06"/>
 </segment>
 <segment>
 <pinref part="R33" gate="G$1" pin="1"/>
@@ -20489,6 +20554,9 @@ temp. sensors</text>
 <attribute name="NAME" x="219.71" y="108.3564" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="219.71" y="106.172" size="1.778" layer="96" rot="MR180"/>
 </instance>
+<instance part="SUPPLY37" gate="GND" x="218.44" y="96.52" smashed="yes">
+<attribute name="VALUE" x="220.345" y="97.155" size="1.778" layer="96" rot="MR180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20611,6 +20679,8 @@ temp. sensors</text>
 <wire x1="213.36" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="99.06" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
 <junction x="213.36" y="99.06"/>
+<pinref part="SUPPLY37" gate="GND" pin="GND"/>
+<junction x="218.44" y="99.06"/>
 </segment>
 <segment>
 <pinref part="R70" gate="G$1" pin="2"/>
@@ -21243,6 +21313,11 @@ temp. sensors</text>
 <approved hash="113,3,170.18,166.735,GND,,,,,"/>
 <approved hash="113,3,249.919,115.866,CH1,,,,,"/>
 <approved hash="113,4,249.919,115.866,CH2,,,,,"/>
+<approved hash="113,3,235.229,153.281,SH1,,,,,"/>
+<approved hash="113,3,235.229,148.201,SH2,,,,,"/>
+<approved hash="113,1,129.326,105.427,TP1,,,,,"/>
+<approved hash="113,1,129.326,130.827,TP2,,,,,"/>
+<approved hash="113,1,129.326,41.9269,TP3,,,,,"/>
 </errors>
 </schematic>
 </drawing>

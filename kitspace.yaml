@@ -1,0 +1,7 @@
+dcm224:
+    summary: BB3 DCM224 power module
+    color: blue
+    site: https://www.envox.hr/eez/eez-bench-box-3/eez-dib-dcm224-dual-power-module.html
+    gerbers: Gerber files
+    bom: BOM/1-click-bom.csv
+
