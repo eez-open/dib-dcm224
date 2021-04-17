@@ -31,3 +31,10 @@ Power input: 48 Vdc (e.g. Mean Well LRS-150F-48)
 - I2C EEPROM for storing board specific configuration and calibration parameters
 - Dimensions: 155 x 95 mm, 4-layer PCB
 - **CE certified design**
+
+### Firmware repository
+
+https://github.com/eez-open/dib-dcm224-fw  
+The firmware download procedure is described in Chapter 13.2 of the [User Manual](https://www.envox.eu/eez-bench-box-3/bb3-user-manual/13-firmware-upgrade/). 
+
+
