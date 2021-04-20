@@ -2,7 +2,9 @@
 ### Ownership and License
 The contributors are listed in CONTRIB.TXT.
 
-![osl](Images/osl.png)
+Licenses | OSHWA UID
+--|--
+![osl](Images/osl.png) | [![OSHW-HR000007](Images/OSHW_UID_HR7.svg)](https://certification.oshwa.org/hr000007.html)
 
 ### Overview
 
