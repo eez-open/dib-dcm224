@@ -1,7 +1,7 @@
 Screaming Circuits SMD component position file.
 Created by Centroid_ScreamingCircuits_smd.ulp 1.2.0.
 
-Centroid Data for pc board: "EEZ DIB DCM224-DM r3B3.brd" as of: 25.11.2020. 12:55
+Centroid Data for pc board: "EEZ DIB DCM224 r3B4.brd" as of: 19.7.2021. 16:04
 Measurements are in inches. Comma delimited
 Only surface mount components included
 
@@ -129,7 +129,7 @@ L4,Top,1.782,0.958,180
 L5,Top,1.475,1.995,90
 NTC1,Top,3.200,2.627,270
 NTC2,Top,3.200,1.107,90
-OE#1,Top,4.975,2.145,180
+OE#1,Top,4.975,2.155,180
 OE#2,Top,5.027,2.045,0
 Q1,Top,3.357,3.380,270
 Q2,Top,2.685,2.627,270
